@@ -31,17 +31,15 @@ section#login {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden; /* esconder algum transbordamento*/
-
     background-color: white;
     height: 500px;
-    width: 265px;
+    width: 250px;
     border-radius: 20px;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.338);
-
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagens {
@@ -67,10 +65,78 @@ div#formulario > p {
     font-size: 0.8em;
 }
 
-label {
- 
+form > div.campo {
+    background-color: #5f2c82;
+    display: block;
+    width: 100%;
+    height: 42px;
+    border-radius: 5px;
+    margin: 5px 0px;
+    border: 1px solid #5f2c82;
+    box-shadow: 0px 0px 2px 1px #3a1a50;
 }
 
+div.campo > label {
+    display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    cursor:default;
+   
+}
+
+div.campo > input {
+    background-color: #62ded9;
+    font-size: 1em;
+    width: calc(100% - 46px);
+    height: 100%;
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+    transform: translate(-0.1px, -12px);
+}
+
+div.campo >input:hover {
+    background-color: white;
+}
+
+
+form > input[type=submit] {
+    display: block;
+    width: 100%;
+    background-color:#214a49;
+    color: #73fcf7;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 2px 1px #1a3837;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: white;
+}
+
+a.botao {
+    display: block;
+    color: #306842;
+    border: 2px solid #173433;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px #132928c6;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    font-size: 0.8em;
+}
+
+a.botao:hover {
+    color: #a04f49;
+}
 
 
 
